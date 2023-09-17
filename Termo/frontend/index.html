@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="alert">
+            <span id="alert-message"></span>
+        </div>
+        <div class="winner">
+            <span id="message-word-etc">Imprecionante</span>
+            <div class="distribution">
+                <span id="title">Distribução de Tentativas</span>
+                <div id="score">
+                    <span class="area">1</span>
+                    <span class="area">2</span>
+                    <span class="area">3</span>
+                    <span class="area">4</span>
+                    <span class="area">5</span>
+                    <span class="area">6</span>
+                    <span class="area">💀</span>
+                </div>
+            </div>
+            <div class="next-word">
+                <span>Proxima palavra:</span>
+                <span id="timer">00:00:00</span>
+            </div>
+        </div>
+        <div class="table">
+            <div class="words-lists">
+                <span class="letter" class="id-letters-1" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-1" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-1" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-1" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-1" data-index-letter="4"></span>
+            </div>
+            <div class="words-lists">
+                <span class="letter" class="id-letters-2" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-2" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-2" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-2" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-2" data-index-letter="4"></span>
+            </div>
+            <div class="words-lists">
+                <span class="letter" class="id-letters-3" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-3" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-3" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-3" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-3" data-index-letter="4"></span>
+            </div>
+            <div class="words-lists">
+                <span class="letter" class="id-letters-4" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-4" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-4" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-4" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-4" data-index-letter="4"></span>
+            </div>
+            <div class="words-lists">
+                <span class="letter" class="id-letters-5" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-5" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-5" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-5" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-5" data-index-letter="4"></span>
+            </div>
+            <div class="words-lists">
+                <span class="letter" class="id-letters-6" data-index-letter="0"></span>
+                <span class="letter" class="id-letters-6" data-index-letter="1"></span>
+                <span class="letter" class="id-letters-6" data-index-letter="2"></span>
+                <span class="letter" class="id-letters-6" data-index-letter="3"></span>
+                <span class="letter" class="id-letters-6" data-index-letter="4"></span>
+            </div>
+        </div>
+        <div class="keyboard">
+            <button class="buttons" value="q" data-button-function="letter">q</button>
+            <button class="buttons" value="w" data-button-function="letter">w</button>
+            <button class="buttons" value="e" data-button-function="letter">e</button>
+            <button class="buttons" value="r" data-button-function="letter">r</button>
+            <button class="buttons" value="t" data-button-function="letter">t</button>
+            <button class="buttons" value="y" data-button-function="letter">y</button>
+            <button class="buttons" value="u" data-button-function="letter">u</button>
+            <button class="buttons" value="i" data-button-function="letter">i</button>
+            <button class="buttons" value="o" data-button-function="letter">o</button>
+            <button class="buttons" value="p" data-button-function="letter">p</button>
+            <button class="buttons" value="a" data-button-function="letter">a</button>
+            <button class="buttons" value="s" data-button-function="letter">s</button>
+            <button class="buttons" value="d" data-button-function="letter">d</button>
+            <button class="buttons" value="f" data-button-function="letter">f</button>
+            <button class="buttons" value="g" data-button-function="letter">g</button>
+            <button class="buttons" value="h" data-button-function="letter">h</button>
+            <button class="buttons" value="j" data-button-function="letter">j</button>
+            <button class="buttons" value="k" data-button-function="letter">k</button>
+            <button class="buttons" value="l" data-button-function="letter">l</button>
+            <button class="buttons" value="del" data-button-function="del"><img src="img/backspace.png" id="img-backspace" alt="img-del"></button>
+            <button class="buttons" value="z" data-button-function="letter">z</button>
+            <button class="buttons" value="x" data-button-function="letter">x</button>
+            <button class="buttons" value="c" data-button-function="letter">c</button>
+            <button class="buttons" value="v" data-button-function="letter">v</button>
+            <button class="buttons" value="b" data-button-function="letter">b</button>
+            <button class="buttons" value="n" data-button-function="letter">n</button>
+            <button class="buttons" value="m" data-button-function="letter">m</button>
+            <button class="buttons" value="enter" data-button-function="enter">enter</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
